@@ -27,6 +27,10 @@
 
 `git push --prune {{remote_name}}`
 
-- Publish tags that aren't yet in the remote repository:
+- Publish tags to remote repository. If tag already exists in remote, push gets rejected:
 
 `git push --tags`
+
+- Publish tags that aren't yet in the remote repository (and all things that would be pushed with plain `git push`):
+
+`git push --follow-tags`
